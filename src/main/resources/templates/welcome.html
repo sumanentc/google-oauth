@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/xhtml">
+<head></head>
+<body>
+<style type="text/css">
+    body {
+      background: #757F9A; /* fallback for old browsers */
+      background: -webkit-linear-gradient(to left, #757F9A , #D7DDE8); /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to left, #757F9A , #D7DDE8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    .position-center {
+      position:absolute;
+      top: 50%;
+      left: 50%;
+      width:30em;
+      height:18em;
+      margin-top: -9em; /*set to a negative number 1/2 of your height*/
+      margin-left: -15em; /*set to a negative number 1/2 of your width*/
+      color: whitesmoke;
+  }
+</style>
+<div class="position-center" style="text-align: center">
+  <div style="font-size: 40px">
+    <h1 th:text="'Welcome ' + ${user}"></h1>
+  </div>
+  <div style="color: #1c897f">
+    <span id="checkmark"></span>
+    <span>You've been logged in successfully</span>
+  </div>
+</div>
+<script>
+</script>
+</body>
+</html>

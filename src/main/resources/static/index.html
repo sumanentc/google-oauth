@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/xhtml">
+<head></head>
+<body>
+<style type="text/css">
+  .position-center {
+      position:absolute;
+      top: 50%;
+      left: 50%;
+      width:30em;
+      margin-top: -9em;
+      margin-left: -15em;
+  }
+  .sign-in-button {
+    padding: 16px 96px;
+    border-radius: 6px;
+    background-color: #4d90fe;
+    font-weight: bold;
+    border-style: none;
+    color: white;
+    font-size: 15px;
+  }
+</style>
+<div class="position-center" style="text-align: center">
+  <h1>
+    Getting Started
+  </h1>
+  <button class="sign-in-button">
+    <a href="https://accounts.google.com/o/oauth2/auth?scope=profile email&redirect_uri=http://localhost:8080/oauth2callback&response_type=code&client_id=48143850777-mmi2o4rlcll2qlbl1e3uu18gd3hktlij.apps.googleusercontent.com&approval_prompt=force&state=http://localhost:8080">Sign-in with google account</a>
+  </button>
+</div>
+<script>
+</script>
+</body>
+</html>
